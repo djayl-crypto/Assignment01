@@ -1,6 +1,6 @@
 # Cloudflare 배포 구성
 
-공개 주소: https://assignment01.dojin9512.workers.dev
+공개 주소: https://assignment01.djl-urban.workers.dev
 
 Cloudflare Worker 이름은 `assignment01`입니다. 화면 파일은 Workers Static Assets가 제공하며, `/api/*` 요청은 `worker.py`에서 처리합니다. 점수 계산은 로컬 앱과 동일한 `quiz.py`를 사용합니다.
 
@@ -33,7 +33,7 @@ python verify_deployment.py http://localhost:8787
 
 ```bash
 npm run deploy
-python verify_deployment.py https://assignment01.dojin9512.workers.dev
+python verify_deployment.py https://assignment01.djl-urban.workers.dev
 ```
 
 `build_worker.py`는 `worker.py`와 `quiz.py`만 `.wrangler/city-fit/`에 복사합니다. 배포 SDK, 가상환경, `node_modules/`, 빌드 결과는 Git에 포함하지 않습니다. Python과 CLI가 수집하는 진단 로그에 사용자 응답 본문을 추가하지 않습니다.

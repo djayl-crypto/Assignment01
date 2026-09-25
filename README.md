@@ -2,7 +2,7 @@
 
 **10개의 질문으로 발견하는 나만의 도시생활 취향.**
 
-**[CITY:FIT 앱 바로가기](https://assignment01.dojin9512.workers.dev)**
+**[CITY:FIT 앱 바로가기](https://assignment01.djl-urban.workers.dev)**
 
 CITY:FIT은 공원, 대중교통, 상업시설, 조용한 주거환경, 문화시설에 관한 선호를 묻고, 응답에 어울리는 도시생활 유형과 설명을 보여주는 **Python 기반 웹앱**입니다. 스마트도시데이터분석 수업의 첫 번째 과제로, 함수·조건문·반복문을 활용하여 구현했습니다.
 
