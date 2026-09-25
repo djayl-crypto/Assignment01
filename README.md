@@ -31,7 +31,7 @@ CITY:FIT은 공원, 대중교통, 상업시설, 조용한 주거환경, 문화�
 
 ## Python으로 구현한 핵심 로직
 
-질문·유형 데이터와 계산 로직은 [quiz.py](quiz.py)에 모았습니다. HTML과 CSS는 화면을 구성하고, JavaScript는 화면 전환과 응답 전달을 담당합니다. **입력 검증, 점수 계산, 최종 유형 판정은 Python 서버에서 실행합니다.**
+질문·유형 데이터와 계산 로직은 [src/quiz.py](src/quiz.py)에 모았습니다. HTML과 CSS는 화면을 구성하고, JavaScript는 화면 전환과 응답 전달을 담당합니다. **입력 검증, 점수 계산, 최종 유형 판정은 Python 서버에서 실행합니다.**
 
 | 수업에서 배운 내용 | 코드에서의 활용 |
 | --- | --- |
@@ -60,16 +60,23 @@ CITY:FIT은 공원, 대중교통, 상업시설, 조용한 주거환경, 문화�
 
 ## 프로젝트 구성
 
-| 파일 | 역할 |
-| --- | --- |
-| [quiz.py](quiz.py) | 질문과 유형 데이터, 입력 검증, 점수 계산, 결과 판정 |
-| [app.py](app.py) | 로컬 HTTP 서버, 정적 파일 제공, API 연결 |
-| [worker.py](worker.py) | Cloudflare에서 실행되는 Python API 진입점 |
-| [wrangler.jsonc](wrangler.jsonc) | Python Worker와 정적 화면 배포 설정 |
-| [static/index.html](static/index.html) | 시작·질문·결과 화면 구조 |
-| [static/style.css](static/style.css) | 색상, 배치, 모바일 대응 스타일 |
-| [static/script.js](static/script.js) | 화면 전환, 답변 선택과 수정, Python API 호출 |
-| [static/city.svg](static/city.svg) | 도시 일러스트 |
-| [test_quiz.py](test_quiz.py) | 핵심 로직과 HTTP API 검증 |
+```text
+Assignment01/
+├── src/                        # Python 코드
+│   ├── quiz.py                 # 질문·유형 데이터와 점수 계산
+│   ├── app.py                  # 로컬 HTTP 서버
+│   └── worker.py               # Cloudflare Python API
+├── static/                     # HTML·CSS·JavaScript·도시 일러스트
+├── tests/                      # 핵심 로직과 HTTP API 검증
+├── scripts/                    # 배포 빌드·배포 주소 검증 도구
+├── docs/                       # 개발·배포 안내
+├── README.md                   # 앱 소개
+├── wrangler.jsonc              # Cloudflare 배포 설정
+├── requirements-cloudflare.txt # Python 배포 SDK 버전
+├── package.json                # 배포 명령과 도구
+└── package-lock.json           # 배포 도구의 의존성 버전 고정
+```
+
+Python 로직은 [src/quiz.py](src/quiz.py), 화면은 [static/](static/), 개발·배포 관련 안내는 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)에서 확인할 수 있습니다.
 
 서버는 `GET /api/quiz`로 질문과 유형 정보를 제공하고, `POST /api/result`로 전달된 응답을 계산해 결과를 반환합니다.

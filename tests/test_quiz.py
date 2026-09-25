@@ -6,8 +6,8 @@ from http.server import ThreadingHTTPServer
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-from app import AppHandler
-from quiz import CITY_TYPES, QUESTIONS, answer_to_points, calculate_result, check_answer
+from src.app import AppHandler
+from src.quiz import CITY_TYPES, QUESTIONS, answer_to_points, calculate_result, check_answer
 
 
 class QuizTests(unittest.TestCase):

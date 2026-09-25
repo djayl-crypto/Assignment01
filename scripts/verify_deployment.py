@@ -5,7 +5,7 @@ import json
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
-from quiz import CITY_TYPES, QUESTIONS, calculate_result
+from src.quiz import CITY_TYPES, QUESTIONS, calculate_result
 
 
 def request(base, path, method="GET", payload=None, raw_body=None):

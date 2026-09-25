@@ -3,7 +3,7 @@
   "name": "assignment01",
   "account_id": "ecb2b3e0f21e1a755c6b2f3a1c0f4219",
   "main": ".wrangler/city-fit/worker.py",
-  "build": { "command": "python build_worker.py" },
+  "build": { "command": "python -m scripts.build_worker" },
   "compatibility_date": "2026-09-25",
   "compatibility_flags": ["python_workers"],
   "workers_dev": true,

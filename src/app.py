@@ -1,4 +1,4 @@
-"""로컬 시안 서버. 실행: python app.py (외부 패키지 설치 불필요)."""
+"""로컬 시안 서버. 실행: python -m src.app (외부 패키지 설치 불필요)."""
 
 import argparse
 import json
@@ -6,9 +6,9 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlsplit
 
-from quiz import CHOICES, CITY_TYPES, QUESTIONS, calculate_result
+from .quiz import CHOICES, CITY_TYPES, QUESTIONS, calculate_result
 
-STATIC = Path(__file__).parent / "static"
+STATIC = Path(__file__).resolve().parent.parent / "static"
 FILES = {
     "/": ("index.html", "text/html; charset=utf-8"),
     "/style.css": ("style.css", "text/css; charset=utf-8"),
