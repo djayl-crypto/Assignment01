@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6ee">
+  <meta name="description" content="10개의 질문으로 발견하는 나에게 맞는 도시생활. 나만의 동네 취향을 찾아보세요.">
+  <title>CITY:FIT — 나에게 맞는 도시생활</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23253f32'/%3E%3Cpath d='M10 28V16h7v12m3 0V10h10v18' stroke='%23d6ee99' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="CITY FIT 처음으로"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>CITY<span class="brand-colon">:</span>FIT</a>
+      <span class="header-caption">도시와 나 사이, 딱 맞는 취향</span>
+      <button class="text-button" id="browse-types">5가지 생활 유형 <span aria-hidden="true">↗</span></button>
+    </header>
+    <main id="main">
+      <div id="notice" class="notice" role="alert" hidden></div>
+      <section id="home-screen" aria-labelledby="home-title">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> FIND YOUR KIND OF CITY</p>
+            <h1 id="home-title">어떤 도시에서<br>가장 <span class="highlight">나다울까요?</span></h1>
+            <p class="hero-description">공원 옆 산책길, 활기찬 골목, 조용한 집.<br>좋아하는 일상을 따라가면<br>나에게 어울리는 도시가 보여요.</p>
+            <button class="primary-button start-button" id="start" disabled>테스트 준비 중 <span aria-hidden="true">↗</span></button>
+            <p class="under-button">정답은 없어요. 평소의 나를 떠올려보세요.</p>
+          </div>
+          <div class="hero-visual">
+            <div class="visual-topline"><span>YOUR EVERYDAY, YOUR CITY</span><span>↗</span></div>
+            <div class="map-label label-park"><span class="map-dot"></span> 산책이 일상이 되는 곳</div>
+            <img class="city-art" src="/city.svg" alt="공원, 주택, 카페, 문화시설과 대중교통이 연결된 작은 도시 일러스트">
+            <div class="map-label label-home"><span class="tiny-home" aria-hidden="true">⌂</span> 나의 취향이 머무는 동네</div>
+            <div class="visual-bottomline"><span>조금 더 나다운 일상을 찾아서</span><span class="compass">N ↑</span></div>
+          </div>
+        </div>
+        <div class="test-facts" aria-label="테스트 안내">
+          <div><span class="fact-icon">≡</span><strong>10<span>개의 질문</span></strong><p>일상의 작은 선택으로</p></div>
+          <div><span class="fact-icon">◷</span><strong>약 2<span>분</span></strong><p>가볍게 알아보는 내 취향</p></div>
+          <div><span class="fact-icon">⌘</span><strong>5<span>가지 생활 유형</span></strong><p>나에게 맞는 도시의 발견</p></div>
+          <div class="fact-note"><span>오직 나의 취향에 집중하세요.</span><p>회원가입 없이, 응답은 저장하지 않아요.</p></div>
+        </div>
+        <section class="types-section" id="types" aria-labelledby="types-title">
+          <div class="section-heading"><div><p class="eyebrow">FIVE WAYS TO FEEL AT HOME</p><h2 id="types-title">같은 도시, 다섯 가지 일상</h2></div><p>당신은 어떤 풍경에 마음이 가나요?</p></div>
+          <div class="type-grid" id="type-cards"></div>
+        </section>
+      </section>
+
+      <section id="question-screen" class="question-screen" hidden aria-labelledby="question-title">
+        <aside class="question-aside"><p class="eyebrow">A LITTLE CLOSER TO YOU</p><h2>내가 좋아하는 일상,<br>하나씩 발견하는 중.</h2><img src="/city.svg" alt="" class="question-art"><p>좋고 나쁜 답은 없어요.<br>지금의 마음에 가까운 답을 골라주세요.</p><div class="aside-bottom">MY CITY, MY PACE <span>↗</span></div></aside>
+        <div class="question-main">
+          <div class="progress-heading"><span id="question-category">일상의 취향</span><span><strong id="question-number">01</strong><span class="muted"> / 10</span></span></div>
+          <div class="progress-track" role="progressbar" aria-label="테스트 진행" aria-valuemin="0" aria-valuemax="10" aria-valuenow="1" id="progress"><div id="progress-fill"></div></div>
+          <p class="question-kicker">지금의 나와 얼마나 닮았나요?</p>
+          <h1 id="question-title" tabindex="-1"></h1>
+          <p id="question-hint" class="question-hint"></p>
+          <fieldset class="answers" id="answers"><legend class="sr-only">답변 선택</legend></fieldset>
+          <div class="question-actions"><button id="previous" class="back-button">← 이전</button><button id="next" class="primary-button" disabled>다음 질문 <span aria-hidden="true">→</span></button></div>
+          <p class="question-footnote">답변은 이전 버튼으로 언제든 수정할 수 있어요.</p>
+        </div>
+      </section>
+
+      <section id="result-screen" class="result-screen" hidden aria-labelledby="result-title">
+        <div class="result-top"><p class="eyebrow">YOUR CITY FIT</p><h1 id="result-title" tabindex="-1">당신의 취향이 그리는 도시</h1><p>좋아하는 일상 속에, 나에게 맞는 동네의 힌트가 있어요.</p></div>
+        <div class="result-layout">
+          <article class="result-card" id="result-card"><span class="result-english" id="result-english"></span><h2 id="result-name"></h2><img src="/city.svg" alt="" class="result-art"><h3 id="result-headline"></h3><p id="result-description"></p><div id="result-tags" class="tags"></div></article>
+          <div class="result-detail"><section class="score-card"><div class="score-heading"><h2>나의 도시 취향 지도</h2><span>MY PREFERENCES</span></div><div id="score-bars"></div><p class="score-note">각 유형의 최대 8점 대비 응답 점수예요.<br>유형별 점수는 독립적이며, 합계가 100%인 비율은 아니에요.</p></section><section class="tip-card"><p class="eyebrow">A SMALL STEP FOR YOUR CITY</p><h2>내 동네를 찾는 작은 팁</h2><p id="result-tip"></p></section></div>
+        </div>
+        <div class="result-actions"><button id="restart" class="primary-button">다시 테스트하기 <span aria-hidden="true">↻</span></button><button id="review" class="text-button">내 답변 돌아보기 →</button></div>
+        <p class="result-disclaimer">이 테스트는 수업 과제로 만든 취향 탐색 도구이며, 검증된 심리검사나 실제 거주지 추천은 아니에요.</p>
+      </section>
+    </main>
+    <footer><span class="footer-brand">CITY:FIT</span><span>나에게 맞는 도시, 나다운 일상.</span><span class="footer-course">스마트도시데이터분석 · Assignment 01</span></footer>
+  </div>
+  <noscript><p class="notice">질문 화면을 이용하려면 브라우저에서 JavaScript를 켜주세요. 점수 계산은 Python 서버에서 실행됩니다.</p></noscript>
+</body>
+</html>

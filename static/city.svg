@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 470" fill="none">
+<defs>
+  <pattern id="windows" width="22" height="27" patternUnits="userSpaceOnUse"><rect x="6" y="6" width="8" height="13" rx="1" fill="#f5f3d8"/></pattern>
+  <pattern id="bluewindows" width="24" height="28" patternUnits="userSpaceOnUse"><rect x="7" y="7" width="9" height="13" rx="1" fill="#658782"/></pattern>
+  <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#5a7750" flood-opacity=".10"/></filter>
+  <g id="tree"><path d="M0 0V35" stroke="#7b8059" stroke-width="5" stroke-linecap="round"/><ellipse cy="-12" rx="22" ry="30" fill="#83a36b"/><path d="M0-39C-21-34-25 7 0 14Z" fill="#72945c"/></g>
+  <g id="pine"><path d="M0 0V26" stroke="#7b8059" stroke-width="4"/><path d="m0-48-23 45h12L-28 14H28L12-3H24Z" fill="#426c51"/><path d="m0-48-23 45h12L-28 14H0Z" fill="#527b58"/></g>
+  <g id="bush"><ellipse rx="18" ry="10" fill="#a4bc83"/><ellipse cx="15" cy="-3" rx="13" ry="13" fill="#92af71"/></g>
+</defs>
+<!-- An original, code-drawn little neighborhood: no external images or fonts. -->
+<g filter="url(#shadow)">
+<path d="m57 267 266-158 267 151-264 165Z" fill="#bdcda6"/>
+<path d="m57 267 269 158v14L57 282Z" fill="#a9bc92"/><path d="m326 425 264-165v15L326 439Z" fill="#97b384"/>
+<path d="m78 268 245-146 245 138-242 151Z" fill="#e6e7d6"/>
+<path d="m110 291 249-146 40 23-249 147Z" fill="#fbfaf0"/>
+<path d="m196 194 264 150 42-26-265-148Z" fill="#fbfaf0"/>
+<path d="m324 369 128-76 37 22-127 78Z" fill="#b5ccb0"/>
+<path d="m368 389 138-81 39 24-138 82Z" fill="#b9d3cd"/>
+<path d="m383 392 130-77" stroke="#dce9dd" stroke-width="4" stroke-linecap="round"/>
+<path d="m150 315 91 52" stroke="#c6c8b5" stroke-width="2" stroke-dasharray="9 9"/>
+<path d="m277 211 159 89" stroke="#c6c8b5" stroke-width="2" stroke-dasharray="9 9"/>
+<!-- Quiet homes -->
+<path d="m337 126 55 32v83l-55-33Z" fill="#d7b499"/><path d="m392 158 42-24v83l-42 24Z" fill="#c99a7e"/><path d="m337 126 43-26 54 34-42 24Z" fill="#faf2da"/>
+<path d="m333 125 26-41 24 15 13 59Z" fill="#947964"/><path d="m359 84 45-24 35 73-43 25-13-59Z" fill="#b59073"/>
+<path d="m350 151 13 8v18l-13-8Zm21 12 12 7v18l-12-7Z" fill="#fcf2d4"/><path d="m357 181 17 10v37l-17-10Z" fill="#9c7b63"/>
+<path d="m407 165 12-7v19l-12 7Z" fill="#efd9b9"/>
+<!-- Apartment -->
+<path d="m255 137 47 26V64l-47-27Z" fill="#aac1b5"/><path d="m302 163 39-23V41l-39 23Z" fill="#799e90"/><path d="m255 37 39-23 47 27-39 23Z" fill="#d3ded0"/>
+<path d="M255 39h47v122h-47Z" fill="url(#bluewindows)" transform="matrix(1 .57 0 1 0 -145)"/>
+<path d="m313 69 9-5v14l-9 5Zm0 25 9-5v14l-9 5Zm0 25 9-5v14l-9 5Z" fill="#d1dfca"/>
+<path d="m277 133 11 6v17l-11-6Z" fill="#587c70"/>
+<!-- Park -->
+<path d="m109 251 91-54 77 45-89 54Z" fill="#cad8a2"/>
+<path d="m131 253 45-26q10-6 22 0l42 24" stroke="#f8f4d9" stroke-width="9" stroke-linecap="round"/>
+<ellipse cx="196" cy="266" rx="20" ry="11" fill="#aac9ba"/><ellipse cx="196" cy="263" rx="17" ry="8" fill="#c7dfd0"/>
+<use href="#tree" x="157" y="201"/><use href="#tree" x="207" y="171" transform="translate(29 25) scale(.86)"/><use href="#pine" x="122" y="231"/>
+<use href="#bush" x="245" y="244"/><use href="#bush" x="166" y="280"/>
+<path d="m204 226 23 13m-27-7 23 13" stroke="#af8860" stroke-width="5"/><path d="m202 233-3 8m24 5-3 8" stroke="#6e7c59" stroke-width="3"/>
+<!-- Cafe -->
+<path d="m199 311 66 38v-62l-66-38Z" fill="#f0d1a5"/><path d="m265 349 45-27v-62l-45 27Z" fill="#d6b48d"/><path d="m199 249 44-27 67 38-45 27Z" fill="#e6c099"/>
+<path d="m199 251 66 38 3 14-72-40Z" fill="#547860"/>
+<path d="m205 255 9 5 1 13-10-6Zm21 12 9 5 1 13-10-6Zm21 12 9 5 1 13-10-6Z" fill="#f7edce"/>
+<path d="m208 280 22 13v24l-22-13Z" fill="#839d8e"/><path d="m240 299 16 9v34l-16-9Z" fill="#8a9e87"/>
+<path d="m278 294 19-11v24l-19 11Z" fill="#a1ad8f"/>
+<path d="m218 239 26-15 32 18-26 15Z" fill="#f6e7c7"/><path d="m227 239 17-10 23 13-17 10Z" fill="#b9c49b"/>
+<path d="m177 318 18 10m-9-5v17" stroke="#8e9774" stroke-width="3"/><ellipse cx="186" cy="315" rx="17" ry="9" fill="#e1b170"/>
+<path d="m171 330 9 5m14 4 9 5" stroke="#647b5a" stroke-width="5"/>
+<!-- Gallery -->
+<path d="m428 235 59 33v-75l-59-34Z" fill="#f5edda"/><path d="m487 268 49-30v-73l-49 28Z" fill="#d7d9c4"/><path d="m422 160 55-33 65 36-55 34Z" fill="#b7beb0"/>
+<path d="m436 187 13 7v30l-13-7Zm21 12 13 7v30l-13-7Z" fill="#b3b2b4"/><path d="m500 214 19-11v38l-19 11Z" fill="#86977c"/>
+<path d="m458 140 20-12 25 14-20 12Z" fill="#d9deca"/>
+<path d="m414 240 77 45 54-33" stroke="#d1d2bd" stroke-width="5"/>
+<!-- Bus and stop -->
+<path d="m300 269 54 31 24-14v-26l-53-29-25 13Z" fill="#749889"/><path d="m300 244 54 30 24-14-53-29Z" fill="#dce5d4"/><path d="m307 249 38 21v13l-38-21Z" fill="#c9dbcf"/><path d="m359 276 13-8v12l-13 8Z" fill="#bdd4c5"/>
+<ellipse cx="313" cy="275" rx="5" ry="7" fill="#577261"/><ellipse cx="342" cy="291" rx="5" ry="7" fill="#577261"/>
+<path d="M388 267v-47" stroke="#728a65" stroke-width="4"/><rect x="377" y="207" width="22" height="19" rx="4" fill="#749764"/><path d="M383 213h10v6h-10Z" fill="#e5eed7"/>
+<!-- Trees and people give the neighborhood scale -->
+<use href="#pine" x="418" y="172"/><use href="#tree" x="545" y="258" transform="translate(81 37) scale(.85)"/>
+<use href="#tree" x="351" y="354" transform="translate(55 42) scale(.85)"/>
+<use href="#bush" x="452" y="349"/><use href="#bush" x="321" y="398"/>
+<circle cx="284" cy="209" r="5" fill="#bc936c"/><path d="M284 215v13" stroke="#d39472" stroke-width="7" stroke-linecap="round"/><path d="m284 228-4 9m4-9 5 6" stroke="#6e8066" stroke-width="3" stroke-linecap="round"/>
+<circle cx="389" cy="325" r="4" fill="#b48f6f"/><path d="M389 331v12" stroke="#ece0ba" stroke-width="7" stroke-linecap="round"/><path d="m389 343-4 7m4-7 4 7" stroke="#6a7c64" stroke-width="3" stroke-linecap="round"/>
+<path d="m456 101 7-4 7 4m-55-29 6-3 6 3" stroke="#94a58c" stroke-width="2" stroke-linecap="round"/>
+</g></svg>
