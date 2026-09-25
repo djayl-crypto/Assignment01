@@ -2,6 +2,8 @@
 
 **10개의 질문으로 발견하는 나만의 도시생활 취향.**
 
+**[CITY:FIT 앱 바로가기](https://assignment01.dojin9512.workers.dev)**
+
 CITY:FIT은 공원, 대중교통, 상업시설, 조용한 주거환경, 문화시설에 관한 선호를 묻고, 응답에 어울리는 도시생활 유형과 설명을 보여주는 **Python 기반 웹앱**입니다. 스마트도시데이터분석 수업의 첫 번째 과제로, 함수·조건문·반복문을 활용하여 구현했습니다.
 
 <img src="static/city.svg" width="480" alt="공원, 주택, 카페, 문화시설과 대중교통이 연결된 CITY:FIT 도시 일러스트">
@@ -62,6 +64,8 @@ CITY:FIT은 공원, 대중교통, 상업시설, 조용한 주거환경, 문화�
 | --- | --- |
 | [quiz.py](quiz.py) | 질문과 유형 데이터, 입력 검증, 점수 계산, 결과 판정 |
 | [app.py](app.py) | 로컬 HTTP 서버, 정적 파일 제공, API 연결 |
+| [worker.py](worker.py) | Cloudflare에서 실행되는 Python API 진입점 |
+| [wrangler.jsonc](wrangler.jsonc) | Python Worker와 정적 화면 배포 설정 |
 | [static/index.html](static/index.html) | 시작·질문·결과 화면 구조 |
 | [static/style.css](static/style.css) | 색상, 배치, 모바일 대응 스타일 |
 | [static/script.js](static/script.js) | 화면 전환, 답변 선택과 수정, Python API 호출 |

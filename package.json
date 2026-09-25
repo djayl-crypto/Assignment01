@@ -1,0 +1,15 @@
+{
+  "name": "assignment01-city-fit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare deployment tools for the CITY:FIT Python app",
+  "scripts": {
+    "setup:cloudflare": "python -m pip install --no-deps --no-compile --only-binary=:all: --target python_modules -r requirements-cloudflare.txt",
+    "dev:cloudflare": "wrangler dev",
+    "deploy:check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.140.0"
+  }
+}

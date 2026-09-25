@@ -1,7 +1,13 @@
 __pycache__/
 *.py[cod]
 .venv/
+.venv-workers/
 .env
 .env.*
 !.env.example
 preview-*.png
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+python_modules/
